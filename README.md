@@ -1,10 +1,10 @@
 
 <!-- PROJECT HEADER -->
 <br />
-<div align="center">
-  <h3 align="center">Laravel 9 Transactions Manager App</h3>
+<div>
+  <h3 style="text-align: center">Laravel 9 Transactions Manager App</h3>
 
-  <p align="center">
+  <p style="text-align: center">
     <a href="https://github.com/mario237/log-viewer.git">
       <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" width="400">
     </a>
@@ -29,8 +29,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-The following tools and services need to be installed on your development or production enviroment.
-If these tools or services aren't installed yet, please follow the install guides of the tools or services itself.
+The following tools and services need to be installed on your development or production environment.
+If these tools or services aren't installed yet, please follow the installation guides of the tools or services itself.
 
 ***Required***
 * git [download](https://git-scm.com/downloads)
@@ -52,20 +52,23 @@ If these tools or services aren't installed yet, please follow the install guide
    ```sh
    composer install
    ```
-4. Copy the example enviroment variables
+4. Copy the example environment variables
    ```sh
    cp .env.example .env
    ```
-5. Serve Laravel Sail to dockerized an application
+5. Serve Laravel Sail to dockerized an application 
+(if you face and error in ports, stop nginx or apache and try again)
    ```sh
    ./vendor/bin/sail up -d
-   ``` 
-
+   ```
 
 6. Generate the application key in `.env`
    ```sh
    ./vendor/bin/sail artisan key:generate
    ```
-
+7. Open the app in browser
+   ```sh
+   url: http://laravel.test
+   ```
 
 
