@@ -27,6 +27,8 @@ class RegisterUserRequest extends FormRequest
         return [
             'name' => ['required' , 'string' , 'min:3' , 'max:100'],
             'email' => ['required' , 'email' , 'max:255' , Rule::unique('users' , 'email')->ignore($this['id'])],
+            'balance' => ['required' , 'numeric' , 'min:1'],
+            'currency' => ['required' , 'string' , 'max:3'],
             'password' => ['required' , 'min:8']
         ];
     }

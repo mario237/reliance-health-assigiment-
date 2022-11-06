@@ -19,7 +19,10 @@ class UserResource extends JsonResource
             'id' => $this['id'],
             'name' => $this['name'],
             'email' => $this['email'],
-            'token' => $this['token']
+            'balance' => $this['balance'],
+            'currency' => $this['currency'],
+            'token' => $this['token'],
+            'created_at' => $this['created_at']->format('m/d/Y')
         );
 
 
